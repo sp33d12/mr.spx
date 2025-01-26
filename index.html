@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammed Abbas Hashem - CV</title>
+    <style>
+        /* General Hacker Theme */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Courier New', monospace;
+        }
+
+        body {
+            background-color: #000;
+            color: #00ff00;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Glitch Animation */
+        @keyframes glitch {
+            0% { text-shadow: 2px 2px 5px #00ff00; }
+            50% { text-shadow: -2px -2px 5px #00ff00; }
+            100% { text-shadow: 2px 2px 5px #00ff00; }
+        }
+
+        /* Container */
+        .container {
+            width: 90%;
+            max-width: 900px;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 25px;
+            border-radius: 10px;
+            border: 2px solid #00ff00;
+            box-shadow: 0px 0px 15px #00ff00;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #00ff00;
+            padding-bottom: 15px;
+        }
+
+        .header-left h2 {
+            font-size: 26px;
+            font-weight: bold;
+            animation: glitch 1s infinite alternate;
+        }
+
+        .header-left p {
+            font-size: 16px;
+            color: #0f0;
+        }
+
+        .header-right img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid #00ff00;
+            filter: brightness(1.2);
+        }
+
+        /* Sections */
+        section {
+            margin: 20px 0;
+            padding: 15px;
+            border-radius: 10px;
+            border-left: 3px solid #00ff00;
+            background: rgba(0, 255, 0, 0.1);
+            transition: 0.3s ease-in-out;
+        }
+
+        section:hover {
+            background: rgba(0, 255, 0, 0.2);
+        }
+
+        h2 {
+            color: #00ff00;
+            font-size: 22px;
+            margin-bottom: 10px;
+            text-shadow: 0px 0px 10px #00ff00;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 10px;
+        }
+
+        ul li {
+            margin-bottom: 5px;
+        }
+
+        ul li strong {
+            color: #00ff00;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        /* Hacker Terminal Cursor Effect */
+        .hacker-text::after {
+            content: '|';
+            display: inline-block;
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-left">
+                <h2 class="hacker-text">Mohammed Abbas Hashem</h2>
+                <p>Software Engineer</p>
+                <p>Baghdad, Iraq | +9647712345678 | mohammad.sp33d12@example.com</p>
+            </div>
+            <div class="header-right">
+               <img src="profile.png" alt="Profile Picture">
+            </div>
+        </header>
+
+        <section class="objective">
+            <h2>Objective</h2>
+            <p>
+                I aim to contribute to growth and innovation in software engineering and AI by leveraging my strong technical background and passion for building efficient solutions.
+            </p>
+        </section>
+
+        <section class="experience">
+            <h2>Experience</h2>
+            <ul>
+                <li>
+                    <strong>Software Engineer Intern</strong> | 2023–2024<br>
+                    <ul>
+                        <li>Developed and enhanced web and mobile applications using JavaScript, Node.js, and modern frameworks.</li>
+                        <li>Contributed to backend development and API integration to ensure seamless functionality.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Application Developer</strong> | 2021–2022<br>
+                    <ul>
+                        <li>Designed and developed user-friendly applications to streamline workflows and improve productivity.</li>
+                        <li>Collaborated with cross-functional teams to deliver high-quality solutions, focusing on performance and scalability.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section class="education">
+            <h2>Education</h2>
+            <ul>
+                <li>
+                    <strong>University of Al-Mustansiriyah</strong> | BSc in Computer Engineering<br>
+                    <ul>
+                        <li>Specialized in software engineering, AI, and machine learning techniques.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li><strong>Programming:</strong> Python, Java, C++, JavaScript, Swift</li>
+                <li><strong>Web Development:</strong> HTML, CSS, React</li>
+                <li><strong>Mobile Development:</strong> Flutter, React Native</li>
+                <li><strong>Soft Skills:</strong> Leadership, Collaboration, Critical Thinking, Problem-Solving</li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
