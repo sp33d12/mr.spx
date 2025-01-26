@@ -3,160 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohammed Abbas Hashem - CV</title>
+    <title>cv</title>
     <style>
-        /* General Hacker Theme */
-        * {
+        body {
+            background: black;
+            color: white;
+            font-family: 'Courier New', monospace;
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Courier New', monospace;
-        }
-
-        /* Matrix Background Animation */
-        body {
-            background-color: black;
-            color: #00ff00;
             overflow: hidden;
         }
 
-        /* Matrix Canvas */
-        canvas {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-        }
-
-        /* Container */
         .container {
-            width: 90%;
-            max-width: 900px;
-            background: rgba(0, 0, 0, 0.85);
-            padding: 25px;
-            border-radius: 10px;
-            border: 2px solid #00cc00;
-            box-shadow: 0px 0px 20px #00ff00;
-            margin: 20px auto;
+            padding: 20px;
         }
 
-        /* Header */
         header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            border-bottom: 2px solid #00cc00;
-            padding-bottom: 15px;
+            margin-bottom: 20px;
         }
 
         .header-left h2 {
-            font-size: 26px;
-            font-weight: bold;
-            animation: glitch 1s infinite alternate;
+            font-size: 2rem;
+            margin: 0;
         }
 
         .header-left p {
-            font-size: 16px;
-            color: #00ff00;
+            font-size: 1rem;
+            margin: 5px 0;
         }
 
         .header-right img {
-            width: 100px;
-            height: 100px;
             border-radius: 50%;
-            border: 3px solid #00ff00;
-            filter: brightness(1.2);
-        }
-
-        /* Sections */
-        section {
-            margin: 20px 0;
-            padding: 15px;
-            border-radius: 10px;
-            border-left: 3px solid #00ff00;
-            background: rgba(0, 255, 0, 0.1);
-            transition: 0.3s ease-in-out;
-        }
-
-        section:hover {
-            background: rgba(0, 255, 0, 0.2);
+            width: 150px;
+            height: 150px;
         }
 
         h2 {
-            color: #00ff00;
-            font-size: 22px;
+            font-size: 1.5rem;
             margin-bottom: 10px;
-            text-shadow: 0px 0px 10px #00ff00;
+        }
+
+        hr {
+            border: 1px solid #00ff00;
+            width: 50px;
+            margin-bottom: 15px;
         }
 
         ul {
-            list-style: none;
-            padding-left: 10px;
+            list-style-type: none;
+            padding: 0;
         }
 
         ul li {
-            margin-bottom: 5px;
+            font-size: 1rem;
+            margin-bottom: 8px;
         }
 
-        ul li strong {
+        .side-t {
+            font-size: 0.9rem;
             color: #00ff00;
         }
 
-        p {
-            line-height: 1.6;
+        section {
+            margin-bottom: 30px;
         }
 
-        /* Hacker Cursor Effect */
-        .hacker-text::after {
-            content: '|';
-            display: inline-block;
-            animation: blink 1s infinite;
-        }
-
-        @keyframes blink {
-            50% { opacity: 0; }
+        .matrix-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://i.imgur.com/1hGLx2g.png') repeat;
+            opacity: 0.1;
+            z-index: -1;
         }
     </style>
 </head>
 <body>
-    <canvas id="matrixCanvas"></canvas>
-
+    <div class="matrix-background"></div>
     <div class="container">
         <header>
             <div class="header-left">
-                <h2 class="hacker-text">Mohammed Abbas Hashem</h2>
+                <h2>Mohammed Abbas Hashem</h2>
                 <p>Software Engineer</p>
                 <p>Baghdad, Iraq | +9647712345678 | mohammad.sp33d12@example.com</p>
             </div>
             <div class="header-right">
-               <img src="profile.png" alt="Profile Picture">
+                <img src="/profile.png" alt="Profile Picture">
             </div>
         </header>
 
         <section class="objective">
             <h2>Objective</h2>
+            <hr>
             <p>
-                I aim to contribute to growth and innovation in software engineering and AI by leveraging my strong technical background and passion for building efficient solutions.
+                I aim to contribute to the growth and innovation in the field of software engineering and AI by utilizing my strong technical background, creativity, and passion for building efficient solutions.
             </p>
         </section>
 
         <section class="experience">
             <h2>Experience</h2>
+            <hr>
             <ul>
                 <li>
                     <strong>Software Engineer Intern</strong> | 2023–2024<br>
                     <ul>
-                        <li>Developed and enhanced web and mobile applications using JavaScript, Node.js, and modern frameworks.</li>
-                        <li>Contributed to backend development and API integration to ensure seamless functionality.</li>
+                        <li class="side-t">Built and enhanced web and mobile applications using JavaScript, Node.js, and modern frameworks.</li>
+                        <li class="side-t">Contributed to backend development and API integration to ensure seamless functionality.</li>
                     </ul>
                 </li>
                 <li>
                     <strong>Application Developer</strong> | 2021–2022<br>
                     <ul>
-                        <li>Designed and developed user-friendly applications to streamline workflows and improve productivity.</li>
-                        <li>Collaborated with cross-functional teams to deliver high-quality solutions, focusing on performance and scalability.</li>
+                        <li class="side-t">Designed and developed user-friendly applications to streamline workflows and improve productivity.</li>
+                        <li class="side-t">Collaborated with cross-functional teams to deliver high-quality solutions, focusing on performance and scalability.</li>
                     </ul>
                 </li>
             </ul>
@@ -164,11 +129,12 @@
 
         <section class="education">
             <h2>Education</h2>
+            <hr>
             <ul>
                 <li>
                     <strong>University of Al-Mustansiriyah</strong> | BSc in Computer Engineering<br>
                     <ul>
-                        <li>Specialized in software engineering, AI, and machine learning techniques.</li>
+                        <li class="side-t">Specialized in software engineering, AI, and machine learning techniques.</li>
                     </ul>
                 </li>
             </ul>
@@ -176,43 +142,14 @@
 
         <section class="skills">
             <h2>Skills</h2>
+            <hr>
             <ul>
-                <li><strong>Programming:</strong> Python, Java, C++, JavaScript, Swift</li>
-                <li><strong>Web Development:</strong> HTML, CSS, React</li>
-                <li><strong>Mobile Development:</strong> Flutter, React Native</li>
-                <li><strong>Soft Skills:</strong> Leadership, Collaboration, Critical Thinking, Problem-Solving</li>
+                <li>Programming Languages: Python, Java, C++, JavaScript, Swift</li>
+                <li>Web Development: HTML, CSS, React</li>
+                <li>Mobile Development: Flutter, React Native</li>
+                <li>Soft Skills: Leadership, Collaboration, Critical Thinking, Problem-Solving</li>
             </ul>
         </section>
     </div>
-
-    <script>
-        const canvas = document.getElementById('matrixCanvas');
-        const ctx = canvas.getContext('2d');
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-
-        const letters = '01abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@#$%^&*()*&^%+-/~{[|`]}';
-        const fontSize = 16;
-        const columns = canvas.width / fontSize;
-        const drops = Array(Math.floor(columns)).fill(1);
-
-        function drawMatrix() {
-            ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
-            ctx.fillRect(0, 0, canvas.width, canvas.height);
-            ctx.fillStyle = '#0F0';
-            ctx.font = `${fontSize}px monospace`;
-
-            for (let i = 0; i < drops.length; i++) {
-                const text = letters[Math.floor(Math.random() * letters.length)];
-                ctx.fillText(text, i * fontSize, drops[i] * fontSize);
-                if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
-                    drops[i] = 0;
-                }
-                drops[i]++;
-            }
-        }
-
-        setInterval(drawMatrix, 50);
-    </script>
 </body>
 </html>
